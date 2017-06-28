@@ -1,6 +1,6 @@
 ## Demo
 
-You can see the demo of the app here - https://mitegvg.github.io/bookingbug-test/
+You can see the demo of the app here - https://mitegvg.github.io/bookingbug-test/index.html
 
 ### How to run tests
 
