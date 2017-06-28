@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" media="all" href="vendor/mocha.css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/main.min.css" rel="stylesheet" type="text/css" />
+<script src="js/angular.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/tether.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/controllers.js"></script>
+
+<body class="blue-bg">
+
+	<div class="app-wrap" ng-app="myApp" >
+		<div ng-controller="myCtrl" class="container-fluid container">
+		<h3>Services</h3>
+			<div class="row">
+					<table class="table table-striped">
+	  					<thead>
+							<tr><th>Name</th><th>Description</th><th>Price</th></tr>
+						</thead>
+						<tbody>
+						    <tr ng-repeat="item in results" >
+						        <td>{{item.name}}</td>
+						        <td>{{item.description}}</td>
+						        <td>{{item.prices[0]}}</td>
+						   	</tr>
+						</tbody>
+				   	</table>
+				</div>
+			</div>
+
+		  <div id="mocha"><h3>Tests:</h3></div>
+		  <div id="messages"></div>
+		  <div id="fixtures"></div>
+	  </div>
+	</div>
+  <script src="vendor/mocha.js"></script>
+  <script src="vendor/chai.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="js/test.js"></script>
+</body>
+</html>
